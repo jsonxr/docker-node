@@ -4,7 +4,7 @@ FROM alpine:3.4
 ENV VERSION=v6.2.1 NPM_VERSION=3
 
 # For base builds
-ENV CONFIG_FLAGS="--without-npm" RM_DIRS=/usr/include
+ENV CONFIG_FLAGS="" RM_DIRS=/usr/include
 
 RUN \
   apk add --upgrade apk-tools && \
